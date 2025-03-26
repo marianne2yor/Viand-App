@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Other page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Kreon:wght@300..700&family=Pacifico&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="script.js"></script>
+    <style>
+    .blog {
+      background-color: #f9f9f9;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    .blog-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+      background-color: white;
+      box-shadow: 0 8px 24px hsla(0, 0%, 0%, 0.15);
+      border-radius: 10px;
+    }
+
+    .blog-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 1.5rem;
+    }
+
+    .blog a {
+      text-align: center;
+      font-size: 1.2rem;
+      color: rgb(41, 41, 41);
+      margin-bottom: 15px;
+      font-family: 'Ubuntu', serif;
+      font-weight: 400;
+      margin-bottom: 30px;
+    }
+  </style>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav>
+      <a href="index.html" target="_self"
+        ><img class="logo" src="assets/Viand Logo (1).png"
+      ></a>
+      <button class="menu-toggle" aria-label="Toggle navigation">
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
+      </button>
+      <div class="nav-links">
+        <a href="index.html" target="_self"
+          >Home</a
+        >
+        <a href="about.html" target="_self">About</a>
+        <a href="blog.html" target="_self">Blog</a>
+      </div>
+    </nav>
+    <main>
+      <section class="blog">
+        <div class="blog-container">
+          <h2 class="second-header">Blog</h2>
+          <a href="https://mariannetuyor.wordpress.com/2024/12/03/viand-my-first-vanilla-js-project/" target="_blank">Viand: My First Vanilla JS Project</a>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer>
+      <div class="footer-container">
+        <img
+          class="footer-logo"
+          src="assets/Viand Logo (1).png"
+          alt="Viand Logo"
+        />
+        <p>&copy; 2024 Sarap Finder. All rights reserved.</p>
+        <ul class="footer-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

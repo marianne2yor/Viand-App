@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Javascript Project</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Kreon:wght@300..700&family=Pacifico&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav>
+      <a href="index.html" target="_self"
+        ><img class="logo" src="assets/Viand Logo (1).png"
+      ></a>
+      <button class="menu-toggle" aria-label="Toggle navigation">
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
+      </button>
+      <div class="nav-links">
+        <a href="index.html" target="_self"
+          >Home</a
+        >
+        <a href="about.html" target="_self">About</a>
+        <a href="blog.html" target="_self">Blog</a>
+      </div>
+    </nav>
+    <main>
+      <section>
+        <!-- search bar -->
+        <div class="container">
+          <h1 class="header">FIND YOUR SARAP!</h1>
+          <h5 class="second-header">
+            Solving today's craving mystery with culinary creations.
+          </h5>
+          <form>
+            <input
+              type="text"
+              class="search-bar"
+              placeholder="Search by name, ingredient, cuisine, or calories..."
+            />
+          </form>
+
+          <!-- search results -->
+          <div class="container-card">
+            <div class="search-result">
+              <!-- <article class="card-article">
+                <img src="https://www.kawalingpinoy.com/wp-content/uploads/2016/12/filipino-chicken-menudo-1-500x500.jpg" alt="photo of viand" class="card-img">
+                <div class="card-data">
+                  <span class="card-description">Calories: 120, Cuisine: Italian</span>
+                  <h2 class="card-title">Food Title</h2>
+                  <a href="#" class="card-button">View Recipe</a>
+                </div>
+              </article> -->
+            </div>
+            <!-- <div class="more-articles">
+              <a class="more" href="#">See more</a>
+            </div> -->
+          </div>
+        </div>
+
+        <!-- New and Trending -->
+        <div class="trending-container">
+          <h5 class="second-header">Trending Recipes</h5>
+          <div class="trending-articles">
+            <div class="article">
+              <img
+                class="article-img"
+                src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg?quality=90&webp=true&resize=700,636"
+                alt="Photo of Viand"
+              />
+              <div class="recipe-container">
+                <a class="recipe" href="#">Food Title</a>
+              </div>
+            </div>
+            <div class="article">
+              <img
+                class="article-img"
+                src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg?quality=90&webp=true&resize=700,636"
+                alt="Photo of Viand"
+              />
+              <div class="recipe-container">
+                <a class="recipe" href="#">Food Title</a>
+              </div>
+            </div>
+            <div class="article">
+              <img
+                class="article-img"
+                src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg?quality=90&webp=true&resize=700,636"
+                alt="Photo of Viand"
+              />
+              <div class="recipe-container">
+                <a class="recipe" href="#">Food Title</a>
+              </div>
+            </div>
+            <div class="article">
+              <img
+                class="article-img"
+                src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg?quality=90&webp=true&resize=700,636"
+                alt="Photo of Viand"
+              />
+              <div class="recipe-container">
+                <a class="recipe" href="#">Food Title</a>
+              </div>
+            </div>
+            <div class="article">
+              <img
+                class="article-img"
+                src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg?quality=90&webp=true&resize=700,636"
+                alt="Photo of Viand"
+              />
+              <div class="recipe-container">
+                <a class="recipe" href="#">Food Title</a>
+              </div>
+            </div>
+            <div class="article">
+              <img
+                class="article-img"
+                src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg?quality=90&webp=true&resize=700,636"
+                alt="Photo of Viand"
+              />
+              <div class="recipe-container">
+                <a class="recipe" href="#">Food Title</a>
+              </div>
+            </div>
+          </div>
+          <div class="more-articles">
+            <a class="more" href="#">See more</a>
+          </div>
+        </div>
+
+        <!-- food videos -->
+        <div class="video-container">
+          <h5 class="second-header">Food Videos</h5>
+          <div class="container-video">
+            <div class="video">
+              <video width="320" height="auto" controls>
+                <source src="assets/Kneading Techniques.mp4" type="video/mp4" />
+              </video>
+              <div class="video-title-container">
+                <a class="video-title" href="#">Breadwinner Techniques</a>
+              </div>
+            </div>
+            <div class="video">
+              <video width="320" height="auto" controls>
+                <source src="assets/PIzza Toppings.mp4" type="video/mp4" />
+              </video>
+              <div class="video-title-container">
+                <a class="video-title" href="#">Pizza Party</a>
+              </div>
+            </div>
+            <div class="video">
+              <video width="320" height="auto" controls>
+                <source src="assets/Way of the Wok.mp4" type="video/mp4" />
+              </video>
+              <div class="video-title-container">
+                <a class="video-title" href="#">Way of the Wok</a>
+              </div>
+            </div>
+            <div class="more-videos">
+              <a class="more" href="#">See more</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer-container">
+        <img
+          class="footer-logo"
+          src="assets/Viand Logo (1).png"
+          alt="Viand Logo"
+        />
+        <p>&copy; 2024 Sarap Finder. All rights reserved.</p>
+        <ul class="footer-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="./script.js" defer></script>
+  </body>
+</html>
