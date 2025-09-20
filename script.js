@@ -1,31 +1,30 @@
-// console.log('Hello! Welcome to Uplift! 🚀');
-const menuToggle = document.querySelector('.menu-toggle');
-const navLinks = document.querySelector('.nav-links');
-const searchForm = document.querySelector('form');
-const searchResults = document.querySelector('.search-result');
-const trendingContainer = document.querySelector('.trending-articles');
-const container = document.querySelector('.container');
-let searchQuery = '';
-const appID = 'f0504f7c';
-const appKey = '35d639b88b1c312f629fc6693495ab21';
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+const searchForm = document.querySelector("form");
+const searchResults = document.querySelector(".search-result");
+const trendingContainer = document.querySelector(".trending-articles");
+const container = document.querySelector(".container");
+let searchQuery = "";
+const appID = "f0504f7c";
+const appKey = "35d639b88b1c312f629fc6693495ab21";
 
 // open menu
-menuToggle.addEventListener('click', (event) => {
-  navLinks.classList.toggle('open');
+menuToggle.addEventListener("click", (event) => {
+  navLinks.classList.toggle("open");
   event.stopPropagation();
 });
 
 // close menu
-document.addEventListener('click', (event) => {
+document.addEventListener("click", (event) => {
   if (!navLinks.contains(event.target) && !menuToggle.contains(event.target)) {
-    navLinks.classList.remove('open');
+    navLinks.classList.remove("open");
   }
 });
 
 // search bar
-searchForm.addEventListener('submit', (e) => {
+searchForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  searchQuery = e.target.querySelector('input').value;
+  searchQuery = e.target.querySelector("input").value;
   fetchRecipes();
 });
 
@@ -42,13 +41,13 @@ async function fetchRecipes() {
     generateHTML(data.hits);
     console.log(data);
   } catch (error) {
-    console.error('Error fetching recipes:', error);
+    console.error("Error fetching recipes:", error);
   }
 }
 
 // Function to display the search results
 function generateHTML(results) {
-  let generatedHTML = '';
+  let generatedHTML = "";
   results.map((result) => {
     generatedHTML += `
     <article class="card-article">
@@ -79,23 +78,21 @@ async function fetchTrendingRecipes() {
     if (!response.ok) throw new Error(`HTTP Error: ${response.status}`);
     const data = await response.json();
 
-
     const randomRecipes = getRandomRecipes(data.hits, 6);
     generateTrendingHTML(randomRecipes);
   } catch (error) {
-    console.error('Error fetching trending recipes:', error);
+    console.error("Error fetching trending recipes:", error);
   }
 }
 
 // Function to select a random set of recipes
 function getRandomRecipes(recipes, count) {
-  const shuffled = recipes.sort(() => 0.5 - Math.random()); 
-  return shuffled.slice(0, count); 
+  const shuffled = recipes.sort(() => 0.5 - Math.random());
+  return shuffled.slice(0, count);
 }
 
-
 function generateTrendingHTML(results) {
-  let trendingHTML = '';
+  let trendingHTML = "";
   results.forEach((result) => {
     trendingHTML += `
       <div class="article">
