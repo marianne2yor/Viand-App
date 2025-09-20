@@ -1,10 +1,10 @@
-# Vanilla JS App
+# Viand 
 
-# Viand 🍲
+Viand was my second project in the Full Stack Web Development Bootcamp. This is your ultimate companion in discovering new recipes, designed to satisfy your cravings and help you find the perfect ulam. Whether you're in the mood for a classic Filipino dish or something new, Viand allows you to search for recipes that cater to your dietary needs and preferences. 
 
-Viand is your ultimate companion in discovering new recipes, designed to satisfy your cravings and help you find the perfect ulam. Whether you're in the mood for a classic Filipino dish or something new, Viand allows you to search for recipes that cater to your dietary needs and preferences.  
+Powered by the **Edamam API**, you can explore a variety of dishes, get detailed nutritional information, and discover trending recipes. 
 
-Powered by the **Edamam API**, you can explore a variety of dishes, get detailed nutritional information, and discover trending recipes.  
+While the core functionality is working, there’s plenty of space to improve performance, UI/UX, and add more features.
 
 ---
 
